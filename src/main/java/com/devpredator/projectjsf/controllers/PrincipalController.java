@@ -19,9 +19,12 @@ import com.devpredator.projectjsf.services.EmpleadoService;
 @ViewScoped
 public class PrincipalController {
 /**
+ * Lista de empleados filtrados
+ */
+	private List <Empleado> empleadosFiltrados;	
+/**
  * Lista de empleados
  */
-	
 private List<Empleado> empleados ;
  /**
   * Servicio con la logica del negocio
@@ -56,5 +59,19 @@ public List<Empleado> getEmpleados() {
  */
 public void setEmpleados(List<Empleado> empleados) {
 	this.empleados = empleados;
+}
+
+/**
+ * @return the empleadosFiltrados
+ */
+public List<Empleado> getEmpleadosFiltrados() {
+	return empleadosFiltrados;
+}
+
+/**
+ * @param empleadosFiltrados the empleadosFiltrados to set
+ */
+public void setEmpleadosFiltrados(List<Empleado> empleadosFiltrados) {
+	this.empleadosFiltrados = empleadosFiltrados;
 }
 }
