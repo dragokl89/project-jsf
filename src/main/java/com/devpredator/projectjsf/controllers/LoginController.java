@@ -41,7 +41,7 @@ public class LoginController {
 			}
 		} else {
 			FacesContext.getCurrentInstance().addMessage("formLogin:txtUser",
-					new FacesMessage(FacesMessage.SEVERITY_ERROR, "usuario incorrecto", ""));
+					new FacesMessage(FacesMessage.SEVERITY_ERROR, "usuario incorrecto y/o contraseña incorrecta", ""));
 		}
 	}
     

@@ -1,6 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html">
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
 <h:head>
 
 	<title>Pantalla principal</title>
@@ -9,7 +10,8 @@
 <h:body>
    Hola como esta ?
    <h:dataTable id="tbEmpleados" var="empleado"
-		value="#{principal.empleados}" headerClass="headerTable" rowClasses="rowTable rowTableLine">
+		value="#{principal.empleados}" headerClass="headerTable"
+		rowClasses="rowTable rowTableLine">
 		<h:column>
 			<f:facet name="header">Nombre</f:facet>
 			<h:outputText value="#{empleado.nombre}"></h:outputText>
